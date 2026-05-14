@@ -3,3 +3,11 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Editor backup files
+*~
+*.swp
+*.swo
+
+# macOS
+.DS_Store

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Sorts+Mill+Goudy:ital@0;1&family=Special+Elite&display=swap');
+
+:root {
+  --cream:       #f5f0e8;
+  --cream-dark:  #e8e0cc;
+  --ink:         #1e1a14;
+  --ink-light:   #4a4035;
+  --rust:        #8b3a2a;
+  --gold:        #9a7a3a;
+  --rule:        #c8b89a;
+}
+
+/* ── Page & Body ── */
+body {
+  background-color: var(--cream);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  color: var(--ink);
+  font-family: 'Sorts Mill Goudy', Georgia, serif;
+}
+
+/* ── Site Header ── */
+.site-header {
+  background-color: var(--cream-dark);
+  border-top: 4px solid var(--ink);
+  border-bottom: 3px double var(--rule);
+  padding: 6px 0 4px;
+}
+
+.site-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink) !important;
+  text-transform: uppercase;
+}
+
+.site-title:visited {
+  color: var(--ink) !important;
+}
+
+.site-nav .page-link {
+  font-family: 'Special Elite', monospace;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+
+.site-nav .page-link:hover {
+  color: var(--rust);
+  text-decoration: none;
+}
+
+/* ── Decorative rule under header ── */
+.site-header::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: var(--rule);
+  margin-top: 4px;
+}
+
+/* ── Main Content ── */
+.page-content {
+  background-color: var(--cream);
+}
+
+/* ── Post & Page Typography ── */
+.post-title,
+.page-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--ink);
+}
+
+p, li {
+  font-family: 'Sorts Mill Goudy', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--ink-light);
+}
+
+a {
+  color: var(--rust);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  color: var(--rust);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rust);
+}
+
+/* ── Post List ── */
+.post-list > li {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 20px;
+}
+
+.post-link {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--ink);
+}
+
+.post-link:hover {
+  color: var(--rust);
+}
+
+.post-meta {
+  font-family: 'Special Elite', monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+/* ── Footer ── */
+.site-footer {
+  background-color: var(--cream-dark);
+  border-top: 3px double var(--rule);
+  color: var(--ink-light);
+}
+
+.footer-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+}
+
+.contact-list li,
+.footer-col p {
+  font-family: 'Special Elite', monospace;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: var(--ink-light);
+}
+
+.social-media-list a {
+  color: var(--ink-light);
+}
+
+.social-media-list a:hover {
+  color: var(--rust);
+}
+
+/* ── Blockquotes ── */
+blockquote {
+  border-left: 4px solid var(--gold);
+  background: rgba(154, 122, 58, 0.06);
+  color: var(--ink-light);
+  font-style: italic;
+  padding: 12px 20px;
+  border-radius: 0 3px 3px 0;
+}
+
+/* ── Code ── */
+code, pre {
+  font-size: 14px;
+  background-color: var(--cream-dark);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+}
+
+/* ── Tables ── */
+table {
+  border: 1px solid var(--rule);
+}
+table th {
+  background-color: var(--cream-dark);
+  font-family: 'Special Elite', monospace;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+}
+table td {
+  border: 1px solid var(--rule);
+  color: var(--ink-light);
+}
+table tr:nth-child(even) {
+  background-color: rgba(200, 184, 154, 0.15);
+}
+
+/* ── Wrapper max-width tweak ── */
+.wrapper {
+  max-width: 860px;
+}

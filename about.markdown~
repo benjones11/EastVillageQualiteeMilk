@@ -1,0 +1,66 @@
+---
+layout: page
+title: About East Village Green
+permalink: /about/
+---
+
+## An Industrial District
+
+<!-- VERIFIED WRITTEN 2026-05-12 — The San Diego Downtown Community Plan (Ch. 1, ~2006),
+     which states downtown was "historically known as Centre City" (British
+     spelling, applies to ALL of downtown's ~1,450 acres) and refers to the
+     eastern sub-district simply as "East Village." -->
+The eastern part of downtown San Diego was, for much of the twentieth century, a working class industrial district. Warehouses, factories, shops, and modest housing for the families who kept the city running filled its streets.
+
+<!-- TODO: VERIFY — multiple specific claims in this paragraph:
+     (a) Qualitee plant/offices on 11th Avenue (street name + that it was both plant AND offices)
+     (b) Qualitee founded 1923 — this is repeatable elsewhere on the site, confirm once
+     (c) Carnation Dairy Factory opened in 1927 (i.e. "four years later")
+     (d) Carnation address: 10th Avenue and J Street
+     (e) Carnation product line: "milk, ice cream, and other dairy products"
+     Check: SDHC business directories, Sanborn fire insurance maps for downtown SD 1920s,
+     San Diego Union-Tribune historical archive. -->
+In the 1920's it was home to some of the city's most productive operations. The Qualitee Dairy Products Company established its plant and offices on 11th Avenue in 1928. Four years later, the Carnation Dairy Factory opened at 10th Avenue and J Street, producing milk, ice cream, and other dairy products for the region. Together the two operations defined the dairy character of the neighborhood for decades.
+The Carnation operation ceased in the 1970s and its building sat largely vacant. Across the eastern downtown blocks, industrial businesses closed and warehouses emptied as San Diego's economy shifted and the city's working class base moved outward.
+
+## An Artists' Neighborhood
+
+<!-- VERIFIED 2026-05-12 — confirmed by San Diego Downtown Community Plan,
+     Ch. 1, p. 1-8 (~2006): "Artists and design firms additionally moved into
+     the warehouse districts in East Village and Little Italy, helping to
+     reclaim these areas." Plan ties this to the late 1980s downtown turnaround
+     that began with Horton Plaza. Source is appropriate to cite directly. -->
+By the 1980's and into the 1990's, artists and performers priced out of other downtown areas and began moving into the cheap warehouse spaces of East Village. The low rent attracted the creative community that would reshape the neighborhood from the ground up.
+
+## The Neighborhood Today
+
+<!-- TODO: VERIFY — ICON complex specifics:
+     (a) ICON sits on the old Carnation/Qualitee site at 10th and J (depends on
+         the 10th & J Carnation address being confirmed above)
+     (b) "Four towers" — count
+     (c) Color palette: blue, red, yellow, white
+     (d) Stated design intent: "to evoke the façade of the original 1927 dairy
+         factory" — this is a designer-intent claim that needs an architect
+         statement or developer marketing source
+     (e) "1927 dairy factory" date repeats the Carnation founding year
+     Check: ICON Residences marketing materials; project architect's portfolio;
+     San Diego architectural press coverage. -->
+The old Carnation and Qualitee site at 11th and J was later redeveloped into the ICON residential complex four towers painted blue, red, yellow, and white to evoke the façade of the original 1927 dairy factory. The dairy buildings are gone, but their footprint remains part of the neighborhood's identity.
+---
+
+*Research is ongoing. Primary sources include the San Diego Downtown Community Plan (City of San Diego), the San Diego History Center, the California Border Region Digitization Project at Calisphere, and the Voice of San Diego.*
+---
+---
+
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
+
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
+
+
+[jekyll-organization]: https://github.com/jekyll

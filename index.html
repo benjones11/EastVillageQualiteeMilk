@@ -1,0 +1,155 @@
+---
+layout: default
+title: East Village Green and Qualitee Milk Co.
+---
+<link rel="stylesheet" href="{{ '/assets/css/bottle.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/history.css' | relative_url }}">
+
+<div class="scene">
+  {% include milk-bottle.svg %}
+</div>
+
+<!-- Bottle anatomy panels -->
+<div class="panel" id="panel-rim">
+  <button class="close-btn" onclick="closePanel()">✕</button>
+  <div class="panel-tag">Opening</div>
+  <div class="panel-title">"Cap Seat" Closure</div>
+  <div class="panel-body">Created and patented by Harvey Barnhart, along with his brother Samuel in 1889, became the standard for milk bottles in the 20th century.</div>
+</div>
+
+<div class="panel" id="panel-neck">
+  <button class="close-btn" onclick="closePanel()">✕</button>
+  <div class="panel-tag">Structure</div>
+  <div class="panel-title">Flared Neck</div>
+  <div class="panel-body">The "bowling pin" shape, which is common with milk bottles from this time period, was patented by Charles Nightingale. Later, called the "common sense" shape made with a press-and-blow machine.</div>
+</div>
+
+
+<div class="panel" id="panel-pint">
+  <button class="close-btn" onclick="closePanel()">✕</button>
+  <div class="panel-tag">Measurement</div>
+  <div class="panel-title">"One Pint" Emboss</div>
+  <div class="panel-body">Volume text was pressed directly into the mould so it became part of the glass, no label needed.</div>
+</div>
+
+
+<div class="panel" id="panel-dairy">
+  <button class="close-btn" onclick="closePanel()">✕</button>
+  <div class="panel-tag">Branding</div>
+  <div class="panel-title">The "Q" Mark</div>
+  <div class="panel-body">The embossed "Q" identified the bottle as Qualitee's property. Each dairy marked its own bottles so they could be reclaimed during the deposit/return process.</div>
+</div>
+
+
+<div class="panel" id="panel-glass">
+  <button class="close-btn" onclick="closePanel()">✕</button>
+  <div class="panel-tag">Material</div>
+  <div class="panel-title">Cylindrical Base</div>
+  <div class="panel-body">The cylindrical body of the milk bottle dominated the market. This style of milk bottle was believed to be patented by "cylindrical Lester milk jar" in early 1878.</div>
+</div>
+
+<div class="hint">hover &amp; click the <span style="color:#c0392b">+</span> markers to explore</div>
+
+<script>
+function showPanel(evt, id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  const panel = document.getElementById('panel-' + id);
+  panel.classList.add('active');
+
+  // Position the panel near the hotspot that was clicked.
+  // getBoundingClientRect() returns viewport coords, which matches
+  // the panel's `position: fixed` coordinate space.
+  const hotspot = evt.currentTarget;
+  const rect = hotspot.getBoundingClientRect();
+  const gap = 16;
+  const margin = 10;
+  const panelWidth = panel.offsetWidth;
+  const panelHeight = panel.offsetHeight;
+
+  // Prefer placing the panel to the right of the hotspot;
+  // flip to the left if it would overflow the viewport.
+  let left = rect.right + gap;
+  if (left + panelWidth > window.innerWidth - margin) {
+    left = rect.left - panelWidth - gap;
+  }
+  if (left < margin) left = margin;
+
+  // Vertically center the panel on the hotspot, then clamp.
+  let top = rect.top + rect.height / 2 - panelHeight / 2;
+  const maxTop = window.innerHeight - panelHeight - margin;
+  if (top < margin) top = margin;
+  if (top > maxTop) top = maxTop;
+
+  panel.style.left = left + 'px';
+  panel.style.top  = top  + 'px';
+}
+function closePanel() {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+}
+</script>
+<!-- 1929 Archive Photo -->
+<div class="archive-photo">
+  <img src="{{ '/assets/images/qualitee-1929.jpg' | relative_url }}" alt="Delivery trucks parked in front of the Qualitee Dairy Products Company, 1929.">
+  <p class="archive-caption">Delivery trucks parked in front of the Qualitee Dairy Products Company &mdash; San Diego, 1929.<br><span class="archive-credit">San Diego History Center / California Border Region Digitization Project, Calisphere</span></p>
+</div>
+<!-- Qualitee Company History Section -->
+<section class="history-section">
+  <div class="history-header">
+    <div class="history-rule"></div>
+    <h2 class="history-title">East Village Green &amp; Qualitee Milk Co.</h2>
+    <div class="history-rule"></div>
+  </div>
+  
+  <p class="history-intro">Founded in 1923, the Qualitee Dairy Products Company grew into one of the region's major retail and wholesale dairies its bottles circulating through thousands of households across the city.</p>
+
+  <div class="history-cards">
+
+    <div class="hcard">
+      <div class="hcard-img-wrap">
+        <div class="hcard-img-placeholder"><span>1923</span></div>
+      </div>
+<!--      
+      <div class="hcard-img-wrap">
+  <img src="{{ '/assets/images/qualitee-1929.jpg' | relative_url }}" alt="Delivery trucks parked in front of the Qualitee Dairy Products Company, 1929. San Diego History Center.">
+      </div>
+      -->
+      <div class="hcard-body">
+        <div class="hcard-tag">Origins</div>
+        <h3 class="hcard-title">Founded 1923</h3>
+        
+        <p class="hcard-text">The Qualitee Dairy Products Company was established by a founding team of San Diego County dairymen, with Douglas Young as general manager. The company would go on to become a major player in the regional dairy industry, as a hub for 
+milk production, distribution, and retail sales. The company sourced raw milk from local farms, processed the milk at their location and distributed it to retailers throughout the region. While the company has long ceased operations, its legacy remains an important part of San Diego's industrial history. The building is now a four-building condominium complex called "ICON". </p>
+        </p>
+      </div>
+      <p class="hcard-credit">Notable suppliers include Louis Melville, a rancher originally from the Lakeside/El Cajon area. He and his family hauled milk in cans to the railroad station by hourse and buggy, shipping to Qualitee Dairy until about 1957.  </p>
+    </div>
+
+
+    <div class="hcard">
+      <div class="hcard-img-wrap">
+      </div>
+      <div class="hcard-body">
+       
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 2026 Professional artifact Drawing -->
+<div class="archive-photo">
+  <img src="{{ '/assets/images/Qualitee Bottle Drawing.jpg' | relative_url }}" alt="Professional drawing of a Qualitee milk bottle, done by artist/inventor Benjamin Jones, 2026.">
+  <p class="archive-caption">Professional drawing of a Qualitee milk bottle, done by artist/inventor Benjamin Jones, 2026.<br><span class="archive-credit">East Village Qualitee Milk Co. Project, in collaboration with DR. Jon Spenard</span></p>
+</div>
+
+<!-- 2026 Artifact Picture -->
+<div class="archive-photo">
+  <img src="{{ '/assets/images/IMG_8735.jpg' | relative_url }}" alt="Qualitee milk bottle, 2026.">
+  <p class="archive-caption">Professional Photograph done by Darian Rycroft &mdash; San Marcos, 2026.<br><span class="archive-credit"></span></p>
+</div>
+
+<div class="worksheader">
+<h1 class="Works Cited">Bibliography and Cited Works:</h1>
+<p class="bibliography">admin. 2017. ‘Modern Loft Design Meets Historic San Diego | Welcome to San Diego’, Welcome to San Diego | Dannecker & Associates <https://welcometosandiego.com/2017/03/modern-loft-design-with-a-touch-of-historic-san-diego/> [accessed 13 May 2026]<br>‘Balboa Park History 1930 - San Diego History Center | San Diego, ca | Our City, Our Story’. 2016. San Diego History Center | San Diego, ca | Our City, Our Story <https://sandiegohistory.org/archives/amero/balboapark/bp1930/> [accessed 13 May 2026]<br>Bennett, Kelly. 2011. ‘Eyes Peer No More from the Old Dairy Building’, Voice of San Diego <https://voiceofsandiego.org/2011/11/29/eyes-peer-no-more-from-the-old-dairy-building/> [accessed 13 May 2026]<br>‘Blocked’. 2026. Lakesidehistory.org <http://lakesidehistory.org/lakeside-history/families/louis-john-melville/> [accessed 14 May 2026]<br>‘Bottle Typing/Shapes Page’. 2025. Secure-Sha.org <https://secure-sha.org/bottle/typing.htm>California Pacific International Exposition, and Jack Lucas. 1935. ‘The Big Book about the LITTLE PEOPLE ’, Cparchive.org (SAN DIEGO FAIR CONCESSIONS, INC. ) <https://cparchive.org/wp/wp-content/uploads/booklet_dm_lttle_people.pdf> [accessed 12 May 2026]<br>‘Delivery Trucks Parked in Front of the Qualitee Dairy Products Company’. 2026. Calisphere <https://calisphere.org/item/ark:/13030/kt3b69q1ng/> [accessed 13 May 2026]<br>‘Food Bottles’. 2021. Secure-Sha.org <https://secure-sha.org/bottle/food.htm#Milk%20Bottles> [accessed 13 May 2026]<br>Furzer, Summer. 2016. ‘San Diego’s Open Forum - Birth and Death - San Diego History Center | San Diego, ca | Our City, Our Story’, San Diego History Center | San Diego, ca | Our City, Our Story <https://sandiegohistory.org/journal/1980/april/forum/> [accessed 13 May 2026]<br>‘Search Results - San Diego History Center | San Diego, ca | Our City, Our Story’. 2016. San Diego History Center | San Diego, ca | Our City, Our Story <https://sandiegohistory.org/search_gcse/?q=qualitee> [accessed 13 May 2026]<br>The City of San Diego . 2011. ‘Historical Resources Board ’, Sandiego.gov (San Diego) <https://www.sandiego.gov/sites/default/files/legacy/planning/programs/historical/pdf/reports/hrb11037mtng110623.pdf> [accessed 12 April 2026]<br>[n.d.]. <https://secure-sha.org/bottle/pdffiles/Empirepatent1901.pdf></https:>
+</p>
+</div>

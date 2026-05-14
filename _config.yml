@@ -1,0 +1,16 @@
+# Site settings
+title: East Village Green and Qualitee Milk Co.
+email: ""
+description: >-
+  A project by Ben Jones and Darian Rycroft, with research and writing contributions from
+  local historians and community members.
+
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: benjones11
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
